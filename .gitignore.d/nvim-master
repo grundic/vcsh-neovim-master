@@ -1,0 +1,5 @@
+*
+!/.gitignore.d
+!/.gitignore.d/nvim-master
+!/.README.d
+!/.README.d/nvim-master.md
