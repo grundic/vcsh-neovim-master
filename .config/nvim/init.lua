@@ -8,8 +8,10 @@
 
 --]]
 
+require('impatient')
 require('disable-builtins')
 require('settings')
 require('plugins')
+
 -- Disabled, since it requires neovim 0.7.0
 --require('keymap').apply_default_keymaps()
