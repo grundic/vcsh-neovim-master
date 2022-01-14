@@ -3,3 +3,11 @@
 !/.gitignore.d/nvim-master
 !/.README.d
 !/.README.d/nvim-master.md
+!/.config
+!/.config/nvim
+!/.config/nvim/init.lua
+!/.config/nvim/lua
+!/.config/nvim/lua/disable-builtins.lua
+!/.config/nvim/lua/keymap.lua
+!/.config/nvim/lua/plugins.lua
+!/.config/nvim/lua/settings.lua

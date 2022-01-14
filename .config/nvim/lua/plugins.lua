@@ -1,0 +1,2 @@
+--[[ neovim config for managing plugins.
+--]]
