@@ -9,4 +9,7 @@ return require('packer').startup(function()
   -- Speed up loading Lua modules in Neovim to improve startup time.
   use 'lewis6991/impatient.nvim'
 
+  -- Colorschemes.
+  use 'morhetz/gruvbox'
+
 end)
