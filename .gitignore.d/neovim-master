@@ -1,0 +1,11 @@
+*
+!/.config/nvim/init.lua
+!/.config/nvim/lua/plugins.lua
+!/.config/nvim/lua/settings/10-disable-builtins.lua
+!/.config/nvim/lua/settings/20-settings.lua
+!/.config/nvim/lua/settings/60-autocommands.lua
+!/.config/nvim/lua/settings/init.lua
+!/.config/nvim/lua/settings/_keymap.lua
+!/.config/nvim/lua/utils.lua
+!/.gitignore.d/nvim-master
+!/.README.d/nvim-master.md

@@ -13,11 +13,6 @@
 -- It is managed by vcsh and must be already installed.
 require('impatient')
 
--- Personal configuration
-require('disable-builtins')
+--
 require('settings')
-require('autocommands')
 require('plugins')
-
--- Disabled, since it requires neovim 0.7.0
---require('keymap').apply_default_keymaps()
