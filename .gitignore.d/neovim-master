@@ -6,6 +6,7 @@
 !/.config/nvim/lua/plugins.lua
 !/.config/nvim/lua/settings/10-disable-builtins.lua
 !/.config/nvim/lua/settings/20-settings.lua
+!/.config/nvim/lua/settings/30-keymap.lua
 !/.config/nvim/lua/settings/60-autocommands.lua
 !/.config/nvim/lua/settings/init.lua
 !/.config/nvim/lua/settings/_keymap.lua
