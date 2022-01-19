@@ -1,5 +1,6 @@
 *
 !/.config/nvim/init.lua
+!/.config/nvim/lua/plugin-settings/10-treesitter.lua
 !/.config/nvim/lua/plugin-settings/init.lua
 !/.config/nvim/lua/plugins.lua
 !/.config/nvim/lua/settings/10-disable-builtins.lua
