@@ -1,5 +1,6 @@
 *
 !/.config/nvim/init.lua
+!/.config/nvim/lua/plugin-settings/init.lua
 !/.config/nvim/lua/plugins.lua
 !/.config/nvim/lua/settings/10-disable-builtins.lua
 !/.config/nvim/lua/settings/20-settings.lua
@@ -7,5 +8,6 @@
 !/.config/nvim/lua/settings/init.lua
 !/.config/nvim/lua/settings/_keymap.lua
 !/.config/nvim/lua/utils.lua
+!/.gitignore.d/neovim-master
 !/.gitignore.d/nvim-master
 !/.README.d/nvim-master.md

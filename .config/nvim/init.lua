@@ -16,3 +16,4 @@ require('impatient')
 --
 require('settings')
 require('plugins')
+require('plugin-settings')
