@@ -9,7 +9,11 @@ return require('packer').startup(function()
   -- Speed up loading Lua modules in Neovim to improve startup time.
   use 'lewis6991/impatient.nvim'
 
+  -- Parsing your code into a syntax tree allows for manipulating the structure of your code in a more intelligent way
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+
+  -- Hop is an EasyMotion-like plugin allowing you to jump anywhere in a document with as few keystrokes as possible.
+  use 'phaazon/hop.nvim'
 
   -- Colorschemes.
   use 'ellisonleao/gruvbox.nvim'
