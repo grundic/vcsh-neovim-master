@@ -16,7 +16,7 @@ cmd([[
   autocmd BufWinLeave * call clearmatches()
 
   " Trim trailing spaces automatically.
-  autocmd BufWritePre * lua strip_trailing_whitespace()
+  autocmd BufWritePre * lua require('utils').strip_trailing_whitespace()
 
   " Turn of relative numbers and hightlighting for inactive window and insert mode.
   :augroup numbertoggle
@@ -32,12 +32,3 @@ cmd([[
   augroup end
 ]])
 
-function strip_trailing_whitespace()
-  if vim.bo.modifiable then
-    local line = vim.fn.line('.')
-    local col = vim.fn.col('.')
-    vim.cmd([[%s/\s\+$//e]])
-    vim.fn.histdel('/', -1)
-    vim.fn.cursor(line, col)
-  end
-end

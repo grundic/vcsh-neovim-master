@@ -61,4 +61,31 @@ function M.glob_require(package)
     end
 end
 
+-----------------------------------------------------------
+-- Strips trailing whitespaces.
+-----------------------------------------------------------
+function M.strip_trailing_whitespace()
+  if vim.bo.modifiable then
+    local line = vim.fn.line('.')
+    local col = vim.fn.col('.')
+    vim.cmd([[%s/\s\+$//e]])
+    vim.fn.histdel('/', -1)
+    vim.fn.cursor(line, col)
+  end
+end
+
+-----------------------------------------------------------
+-- Tooggles windows zoom.
+-----------------------------------------------------------
+function M.zoom_toggle()
+  if vim.t.zoomed and vim.t.zoom_winrestcmd then
+    vim.cmd(vim.t.zoom_winrestcmd)
+    vim.t.zoomed = false
+  else
+    vim.t.zoom_winrestcmd = vim.fn.winrestcmd()
+    vim.cmd('resize | vertical resize')
+    vim.t.zoomed = true
+  end
+end
+
 return M

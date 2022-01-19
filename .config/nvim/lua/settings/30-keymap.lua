@@ -19,6 +19,7 @@ keymap('n', '<down>',     '<c-w>-', { noremap = true })
 
 -- Better window navigation.
 keymap('n', '<leader>s',  '<c-w>w', { noremap = true })
+keymap('n', '<leader>z',  '<cmd>lua require("utils").zoom_toggle()<cr>', { noremap = true })
 keymap('n', '<C-j>',      '<c-w>j', { noremap = true })
 keymap('n', '<C-k>',      '<c-w>k', { noremap = true })
 keymap('n', '<C-h>',      '<c-w>h', { noremap = true })
