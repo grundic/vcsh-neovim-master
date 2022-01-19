@@ -10,6 +10,7 @@ return require('packer').startup(function()
   use 'lewis6991/impatient.nvim'
 
   -- Colorschemes.
-  use 'morhetz/gruvbox'
+  use 'ellisonleao/gruvbox.nvim'
+  use 'sainnhe/sonokai'
 
 end)

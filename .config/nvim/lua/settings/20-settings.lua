@@ -45,7 +45,10 @@ opt.wildignore:append('*.jpg,*.png,*.jpeg,*.bmp,*.gif,*.tiff,*.svg,*.ico,*.avi,*
 opt.wildignore:append('*.pkl,*.DS_Store,*.aux,*.bbl,*.blg,*.brf,*.fls,*.fdb_latexmk,*.synctex.gz,*.xdv')
 
 -- UI & visuals
-cmd [[colorscheme gruvbox]]
+g.sonokai_style = 'andromeda'
+g.sonokai_enable_italic = 1
+cmd [[colorscheme sonokai]]
+
 opt.termguicolors   = true
 wo.number           = true            -- display line numbers.
 wo.relativenumber   = true            -- display relative line numbers.
