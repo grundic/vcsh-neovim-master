@@ -17,6 +17,15 @@ return require('packer').startup(function()
 
   use {'nvim-lua/lsp-status.nvim', requires = 'neovim/nvim-lspconfig'}
 
+  -- Autocompletion plugin.
+  use({
+      "ms-jpq/coq_nvim",
+      requires = { { "ms-jpq/coq.artifacts", branch = "artifacts" } },
+      branch = "coq",
+      opt = true,
+      event = "BufRead",
+  })
+
   -- Hop is an EasyMotion-like plugin allowing you to jump anywhere in a document with as few keystrokes as possible.
   use 'phaazon/hop.nvim'
 
