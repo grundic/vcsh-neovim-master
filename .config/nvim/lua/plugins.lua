@@ -47,4 +47,5 @@ return require('packer').startup(function()
   use 'ellisonleao/gruvbox.nvim'
   use 'sainnhe/sonokai'
 
+  use 'bogado/file-line'
 end)
