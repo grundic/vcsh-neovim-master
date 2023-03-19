@@ -18,6 +18,14 @@ return require('packer').startup(function()
     commit = 'a2d7e78',
   }
 
+  use {
+    'nvim-telescope/telescope.nvim',
+    requires = {
+      {'nvim-lua/plenary.nvim'},
+      {'kyazdani42/nvim-web-devicons'}
+    }
+}
+
   -- Language Server Protocol.
   use 'neovim/nvim-lspconfig'
 
