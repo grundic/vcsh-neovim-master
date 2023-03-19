@@ -10,7 +10,13 @@ return require('packer').startup(function()
   use 'lewis6991/impatient.nvim'
 
   -- Parsing your code into a syntax tree allows for manipulating the structure of your code in a more intelligent way
-  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+  use {
+    'nvim-treesitter/nvim-treesitter',
+    run = ':TSUpdate',
+    -- https://www.reddit.com/r/neovim/comments/107aoqo/problems_running_neovim_using_the_initlua_from/
+    -- Need to wait until nvim 0.8.2
+    commit = 'a2d7e78',
+  }
 
   -- Language Server Protocol.
   use 'neovim/nvim-lspconfig'
