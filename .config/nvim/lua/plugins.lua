@@ -48,4 +48,12 @@ return require('packer').startup(function()
   use 'sainnhe/sonokai'
 
   use 'bogado/file-line'
+
+  -- Dynamically install other plugins from custom sources.
+  --
+  -- Example:
+  --
+  --    local packer = require('packer')
+  --    packer.use 'some-plugin'
+  vim.cmd('runtime! lua/extra-plugins*.lua')
 end)
