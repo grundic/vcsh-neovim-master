@@ -31,13 +31,26 @@ return require('packer').startup(function()
 
   use {'nvim-lua/lsp-status.nvim', requires = 'neovim/nvim-lspconfig'}
 
-  -- Autocompletion plugin.
+  -- Autocompletion plugins.
   use({
-      "ms-jpq/coq_nvim",
-      requires = { { "ms-jpq/coq.artifacts", branch = "artifacts" } },
-      branch = "coq",
-      opt = true,
-      event = "BufRead",
+      "hrsh7th/nvim-cmp", -- Autocompletion plugin
+      as = "completion",
+      after = { "nvim-treesitter" },
+      requires = {
+        "hrsh7th/cmp-nvim-lsp", -- LSP source for nvim-cmp
+        -- "hrsh7th/cmp-vsnip",
+        -- "hrsh7th/vim-vsnip",
+        "L3MON4D3/LuaSnip",
+        "saadparwaiz1/cmp_luasnip",
+        "onsails/lspkind-nvim", -- pictograms for completion types
+        { "tzachar/cmp-tabnine", run = "./install.sh" }, -- TabNine source
+        "hrsh7th/cmp-buffer",
+        "hrsh7th/cmp-path",
+        "hrsh7th/cmp-nvim-lua",
+        "kdheepak/cmp-latex-symbols",
+        "octaltree/cmp-look", -- dictionary completion.
+        "ray-x/lsp_signature.nvim", -- parameters completion.
+      },
   })
 
   -- Hop is an EasyMotion-like plugin allowing you to jump anywhere in a document with as few keystrokes as possible.
@@ -47,6 +60,7 @@ return require('packer').startup(function()
   use 'ellisonleao/gruvbox.nvim'
   use 'sainnhe/sonokai'
 
+  -- Miscelanious
   use 'bogado/file-line'
 
   -- Dynamically install other plugins from custom sources.
