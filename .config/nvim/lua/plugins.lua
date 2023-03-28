@@ -62,6 +62,7 @@ return require('packer').startup(function()
 
   -- Miscelanious
   use 'bogado/file-line'
+  use 'windwp/nvim-autopairs'
 
   -- Dynamically install other plugins from custom sources.
   --
