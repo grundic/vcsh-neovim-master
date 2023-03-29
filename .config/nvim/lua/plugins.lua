@@ -24,10 +24,16 @@ return require('packer').startup(function()
       {'nvim-lua/plenary.nvim'},
       {'kyazdani42/nvim-web-devicons'}
     }
-}
+  }
 
   -- Language Server Protocol.
-  use 'neovim/nvim-lspconfig'
+  use {
+    'neovim/nvim-lspconfig',
+    requires = {
+      "ray-x/lsp_signature.nvim", -- lsp signature hint when you type
+    },
+    -- after = { "completion" }, -- TODO: add `keymap` here as well
+  }
 
   use {'nvim-lua/lsp-status.nvim', requires = 'neovim/nvim-lspconfig'}
 
