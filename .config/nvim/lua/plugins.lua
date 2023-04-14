@@ -70,6 +70,7 @@ return require('packer').startup(function()
   use 'bogado/file-line'
   use 'windwp/nvim-autopairs'
   use 'folke/which-key.nvim'
+  use 'mhinz/vim-signify'
 
   -- Dynamically install other plugins from custom sources.
   --
