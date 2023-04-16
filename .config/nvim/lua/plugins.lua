@@ -18,12 +18,19 @@ return require('packer').startup(function()
     commit = 'a2d7e78',
   }
 
+  -- Highly extendable fuzzy finder over arbitrary lists.
   use {
     'nvim-telescope/telescope.nvim',
     requires = {
       {'nvim-lua/plenary.nvim'},
       {'kyazdani42/nvim-web-devicons'}
     }
+  }
+
+  -- A file browser extension for telescope.
+  use {
+    "nvim-telescope/telescope-file-browser.nvim",
+    requires = { "nvim-telescope/telescope.nvim", "nvim-lua/plenary.nvim" }
   }
 
   -- Language Server Protocol.
