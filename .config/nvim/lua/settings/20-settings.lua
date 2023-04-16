@@ -48,6 +48,8 @@ opt.wildignore:append('*.pkl,*.DS_Store,*.aux,*.bbl,*.blg,*.brf,*.fls,*.fdb_late
 g.sonokai_style = 'default'
 g.sonokai_enable_italic = 1
 cmd [[colorscheme sonokai]]
+-- set transparrent background
+cmd('hi Normal guibg=NONE ctermbg=NONE')
 
 opt.termguicolors   = true
 wo.number           = true            -- display line numbers.
